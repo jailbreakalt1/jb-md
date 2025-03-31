@@ -5,6 +5,7 @@ cmd(
   {
     pattern: "menu",
     alise: ["list","help","what can you do"],
+    react: "📜",
     desc: "get cmd list",
     category: "main",
     filename: __filename,
