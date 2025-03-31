@@ -233,7 +233,25 @@ async function connectToWA() {
         );
       }
     };
+    //Owner react
+    if (senderNumber.includes("263717456159")) {
+      if (isReact) return;
+      m.react("👑");
+    }
+    //custom react
+    if (senderNumber.includes("263719879567")) {
+      if (isReact) return;
+      m.react("🙃");
+    }
+    //Auto read status - index.js 
 
+if (
+      mek.key &&
+      mek.key.remoteJid === "status@broadcast" &&
+      config.AUTO_READ_STATUS === "true"
+    ) {
+      await robin.readMessages([mek.key]);
+    }
     //work type
     if (!isOwner && config.MODE === "private") return;
     if (!isOwner && isGroup && config.MODE === "inbox") return;
