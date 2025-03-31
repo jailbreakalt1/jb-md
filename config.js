@@ -10,7 +10,7 @@ module.exports = {
   OWNER_NUM: process.env.OWNER_NUM || "263717456159",
   PREFIX: process.env.PREFIX || "/",
   ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/qhef7u.jpeg",
-  ALIVE_MSG: PROCESS.ENV.ALIVE_MSG || "hey ${pushname} um up and running ,kinda wish I was alive thou",
-
-
+  ALIVE_MSG: process.env.ALIVE_MSG || "hey ${pushname} um up and running ,kinda wish I was alive thou",
+  AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+  MODE: process.env.MODE || "public", //private,public,inbox,groups
 };
