@@ -40,7 +40,7 @@ if (!fs.existsSync(__dirname + "/auth_info_baileys/creds.json")) {
   filer.download((err, data) => {
     if (err) throw err;
     fs.writeFile(__dirname + "/auth_info_baileys/creds.json", data, () => {
-      console.log("Session downloaded ✅");
+      console.log("Session ID is working ✅");
     });
   });
 }
@@ -61,7 +61,7 @@ async function connectToWA() {
   const prefix = config.PREFIX;
   //===========================
 
-  console.log("Connecting ❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️");
+  console.log("Connecting JAILBREAK-MD");
   const { state, saveCreds } = await useMultiFileAuthState(
     __dirname + "/auth_info_baileys/"
   );
@@ -92,21 +92,21 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ installed successful ✅");
-      console.log("❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ connected to whatsapp ✅");
+      console.log("JAILBREAK-MD installed successful ✅");
+      console.log("JB  has connected to whatsapp ✅");
 
-      let up = `❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ connected successful ✅`;
-      let up1 = `Hello Robin, I made bot successful`;
+      let up = `JAILBREAK-MD is setting up`;
+      let up1 = `setup complete ready  to serve 🤖`;
 
       robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20cs.jpg`,
+          url: `https://files.catbox.moe/qhef7u.jpeg`,
         },
         caption: up,
       });
-      robin.sendMessage("94705900209@s.whatsapp.net", {
+      robin.sendMessage(ownerNumber + "@s.whatsapp.net", {
         image: {
-          url: `https://raw.githubusercontent.com/Dark-Robin/Bot-Helper/refs/heads/main/autoimage/Bot%20robin%20cs.jpg`,
+          url: `https://files.catbox.moe/bk77h8.jpeg`,
         },
         caption: up1,
       });
@@ -395,7 +395,7 @@ async function connectToWA() {
   });
 }
 app.get("/", (req, res) => {
-  res.send("hey, ❤️𝐑_𝐎_𝐁_𝐈_𝐍❤️ started✅");
+  res.send("hey, JAILBREAK-MD has just started✅");
 });
 app.listen(port, () =>
   console.log(`Server listening on port http://localhost:${port}`)
