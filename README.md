@@ -1,0 +1,2 @@
+jailbreak MD 
+jailbreakalt1
